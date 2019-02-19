@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Container\Vector.h" />
+    <ClInclude Include="Source\Content\Mesh.h" />
+    <ClInclude Include="Source\Content\Readers\ObjReader.h" />
+    <ClInclude Include="Source\Core\Managers\ShaderManager.h" />
+    <ClInclude Include="Source\Core\Managers\ResourceManager.h" />
+    <ClInclude Include="Source\Debug\LogType.h" />
+    <ClInclude Include="Source\Defines\KeyHashes.h" />
+    <ClInclude Include="Source\Defines\Keys.h" />
+    <ClInclude Include="Source\Debug\Debug.h" />
+    <ClInclude Include="Source\Debug\Log.h" />
+    <ClInclude Include="Source\Geometry\Prefabs\EmptyObject.h" />
+    <ClInclude Include="Source\Geometry\Prefabs\TeaPot.h" />
+    <ClInclude Include="Source\Graphics\Buffers\IndexBuffer.h" />
+    <ClInclude Include="Source\Graphics\Materials\MaterialParameter.h" />
+    <ClInclude Include="Source\Graphics\Context\OpenGLContext.h" />
+    <ClInclude Include="Source\Defines\Paths.h" />
+    <ClInclude Include="Source\Graphics\Materials\DefaultMaterial.h" />
+    <ClInclude Include="Source\Graphics\Materials\Material.h" />
+    <ClInclude Include="Source\Graphics\Context\Context.h" />
+    <ClInclude Include="Source\Graphics\Materials\PredefinedParameterNames.h" />
+    <ClInclude Include="Source\Graphics\PrimitiveType.h" />
+    <ClInclude Include="Source\Graphics\Rendering\BatchRenderer.h" />
+    <ClInclude Include="Source\Graphics\Rendering\RenderObject.h" />
+    <ClInclude Include="Source\Graphics\Shaders\Shader.h" />
+    <ClInclude Include="Source\Graphics\Shaders\ShaderBuilder.h" />
+    <ClInclude Include="Source\Graphics\Shaders\Uniform.h" />
+    <ClInclude Include="Source\Graphics\Vertex\Vertex.h" />
+    <ClInclude Include="Source\Graphics\Vertex\VertexAttribute.h" />
+    <ClInclude Include="Source\Graphics\Vertex\VertexLayout.h" />
+    <ClInclude Include="Source\Helper\ReturnWrapper.h" />
+    <ClInclude Include="Source\Geometry\Prefabs\PrefabBase.h" />
+    <ClInclude Include="Source\Math\Transform.h" />
+    <ClInclude Include="Source\Resources\ResourceLoader.h" />
+    <ClInclude Include="Source\Scenegraph\SceneObject.h" />
+    <ClInclude Include="Source\Core\Managers\SceneManager.h" />
+    <ClInclude Include="Source\Scenegraph\Scene.h" />
+    <ClInclude Include="Source\Math\Quaternion.h" />
+    <ClInclude Include="Source\Defines\MathDefines.h" />
+    <ClInclude Include="Source\Graphics\Camera.h" />
+    <ClInclude Include="Source\Components\Components.h" />
+    <ClInclude Include="Source\Components\ComponentBase.h" />
+    <ClInclude Include="Source\Components\MeshFilter.h" />
+    <ClInclude Include="Source\Geometry\Prefabs\Plane.h" />
+    <ClInclude Include="Source\Math\MathHelperMethods.h" />
+    <ClInclude Include="Source\Graphics\Shaders\ShaderProgram.h" />
+    <ClInclude Include="Source\Resources\Resource.h" />
+    <ClInclude Include="Source\Core\Managers\InputManager.h" />
+    <ClInclude Include="Source\Core\System\Systems.h" />
+    <ClInclude Include="Source\Graphics\Rendering\RenderTarget.h" />
+    <ClInclude Include="Source\Helper\HelperMethods.h" />
+    <ClInclude Include="Source\Math\Matrix.h" />
+    <ClInclude Include="Source\Math\Vec.h" />
+    <ClInclude Include="Source\Resources\Shaders\ShaderSource.h" />
+    <ClInclude Include="Source\Settings\DirectXSettings.h" />
+    <ClInclude Include="Source\Defines\PlatformDefines.h" />
+    <ClInclude Include="Source\Graphics\Rendering\Renderer.h" />
+    <ClInclude Include="Source\Settings\EngineSettings.h" />
+    <ClInclude Include="Source\Resources\Files\File.h" />
+    <ClInclude Include="Source\Core\GameBase.h" />
+    <ClInclude Include="Source\Defines\Helpers.h" />
+    <ClInclude Include="Source\Core\Managers\EventHandler.h" />
+    <ClInclude Include="Source\Core\Engine.h" />
+    <ClInclude Include="Source\Defines\Constants.h" />
+    <ClInclude Include="Source\Defines\Errors.h" />
+    <ClInclude Include="Source\Memory\Allocator.h" />
+    <ClInclude Include="Source\Helper\Singleton.h" />
+    <ClInclude Include="Source\Memory\Memory.h" />
+    <ClInclude Include="Source\Defines\MemoryDefines.h" />
+    <ClInclude Include="Source\Memory\MemoryManager.h" />
+    <ClInclude Include="Source\Debug\Logger.h" />
+    <ClInclude Include="Source\Core\Count.h" />
+    <ClInclude Include="Source\Defines\TypeDefines.h" />
+    <ClInclude Include="Source\Defines\NoMemoryDefines.h" />
+    <ClInclude Include="Source\Settings\Settings.h" />
+    <ClInclude Include="Source\stdafx.h" />
+    <ClInclude Include="Source\Core\System\Window.h" />
+    <ClInclude Include="Source\Resources\Files\TextFile.h" />
+    <ClInclude Include="Source\Core\System\Clock.h" />
+    <ClInclude Include="Source\Settings\WindowSettings.h" />
+    <ClInclude Include="Source\Core\System\System.h" />
+    <ClInclude Include="Source\Core\Managers\SystemManager.h" />
+    <ClInclude Include="Source\Components\TransformComponent.h" />
+    <ClInclude Include="Source\Graphics\Vertex\VertexArray.h" />
+    <ClInclude Include="Source\Graphics\Buffers\VertexBuffer.h" />
+    <ClInclude Include="Source\Graphics\Vertex\VertexFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Container\Vector.cpp" />
+    <ClCompile Include="Source\Content\Mesh.cpp" />
+    <ClCompile Include="Source\Content\Readers\ObjReader.cpp" />
+    <ClCompile Include="Source\Core\Managers\ShaderManager.cpp" />
+    <ClCompile Include="Source\Core\Managers\ResourceManager.cpp" />
+    <ClCompile Include="Source\Debug\LogType.cpp" />
+    <ClCompile Include="Source\Defines\Helpers.cpp" />
+    <ClCompile Include="Source\Debug\Debug.cpp" />
+    <ClCompile Include="Source\Debug\Log.cpp" />
+    <ClCompile Include="Source\Geometry\Prefabs\EmptyObject.cpp" />
+    <ClCompile Include="Source\Geometry\Prefabs\Teapot.cpp" />
+    <ClCompile Include="Source\Graphics\Buffers\IndexBuffer.cpp" />
+    <ClCompile Include="Source\Graphics\Materials\MaterialParameter.cpp" />
+    <ClCompile Include="Source\Graphics\Context\OpenGLContext.cpp" />
+    <ClCompile Include="Source\Graphics\Materials\DefaultMaterial.cpp" />
+    <ClCompile Include="Source\Graphics\Materials\Material.cpp" />
+    <ClCompile Include="Source\Graphics\Context\Context.cpp" />
+    <ClCompile Include="Source\Graphics\Materials\PredefinedParameterNames.cpp" />
+    <ClCompile Include="Source\Graphics\Rendering\BatchRenderer.cpp" />
+    <ClCompile Include="Source\Graphics\Rendering\RenderObject.cpp" />
+    <ClCompile Include="Source\Graphics\Shaders\Shader.cpp" />
+    <ClCompile Include="Source\Graphics\Shaders\ShaderBuilder.cpp" />
+    <ClCompile Include="Source\Graphics\Shaders\Uniform.cpp" />
+    <ClCompile Include="Source\Graphics\Vertex\Vertex.cpp" />
+    <ClCompile Include="Source\Graphics\Vertex\VertexAttribute.cpp" />
+    <ClCompile Include="Source\Graphics\Vertex\VertexLayout.cpp" />
+    <ClCompile Include="Source\Geometry\Prefabs\PrefabBase.cpp" />
+    <ClCompile Include="Source\Math\Transform.cpp" />
+    <ClCompile Include="Source\Resources\ResourceLoader.cpp" />
+    <ClCompile Include="Source\Scenegraph\SceneObject.cpp" />
+    <ClCompile Include="Source\Core\Managers\SceneManager.cpp" />
+    <ClCompile Include="Source\Scenegraph\Scene.cpp" />
+    <ClCompile Include="Source\Math\Quaternion.cpp" />
+    <ClCompile Include="Source\Graphics\Camera.cpp" />
+    <ClCompile Include="Source\Components\ComponentBase.cpp" />
+    <ClCompile Include="Source\Components\MeshFilter.cpp" />
+    <ClCompile Include="Source\Geometry\Prefabs\Plane.cpp" />
+    <ClCompile Include="Source\Math\MathHelperMethods.cpp" />
+    <ClCompile Include="Source\Graphics\Shaders\ShaderProgram.cpp" />
+    <ClCompile Include="Source\Resources\Resource.cpp" />
+    <ClCompile Include="Source\Core\Managers\InputManager.cpp" />
+    <ClCompile Include="Source\Graphics\Rendering\RenderTarget.cpp" />
+    <ClCompile Include="Source\Helper\HelperMethods.cpp" />
+    <ClCompile Include="Source\Math\Matrix.cpp" />
+    <ClCompile Include="Source\Math\Vec.cpp" />
+    <ClCompile Include="Source\Resources\Shaders\ShaderSource.cpp" />
+    <ClCompile Include="Source\Settings\DirectXSettings.cpp" />
+    <ClCompile Include="Source\Graphics\Rendering\Renderer.cpp" />
+    <ClCompile Include="Source\Settings\EngineSettings.cpp" />
+    <ClCompile Include="Source\Resources\Files\File.cpp" />
+    <ClCompile Include="Source\Core\GameBase.cpp" />
+    <ClCompile Include="Source\Core\Managers\EventHandler.cpp" />
+    <ClCompile Include="Source\Core\Engine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Memory\Allocator.cpp" />
+    <ClCompile Include="Source\Memory\Memory.cpp" />
+    <ClCompile Include="Source\Memory\MemoryManager.cpp" />
+    <ClCompile Include="Source\Debug\Logger.cpp" />
+    <ClCompile Include="Source\Core\Count.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Settings\Settings.cpp" />
+    <ClCompile Include="Source\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Core\System\Window.cpp" />
+    <ClCompile Include="Source\Resources\Files\TextFile.cpp" />
+    <ClCompile Include="Source\Core\System\Clock.cpp" />
+    <ClCompile Include="Source\Settings\WindowSettings.cpp" />
+    <ClCompile Include="Source\Core\System\System.cpp" />
+    <ClCompile Include="Source\Core\Managers\SystemManager.cpp" />
+    <ClCompile Include="Source\Components\TransformComponent.cpp" />
+    <ClCompile Include="Source\Graphics\Vertex\VertexArray.cpp" />
+    <ClCompile Include="Source\Graphics\Buffers\VertexBuffer.cpp" />
+    <ClCompile Include="Source\Graphics\Vertex\VertexFactory.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{AF7319ED-8FA0-495D-8368-DBFB312E43BE}</ProjectGuid>
+    <RootNamespace>RilyEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)Source;$(SolutionDir)Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib $(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <IntDir>_Temp/$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Bin\$(ProjectName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)Source;$(SolutionDir)Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib $(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IntDir>_Temp\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(ProjectDir)$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>GLEW_STATIC;USE_RILY_ALLOC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(ProjectDir)$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>USE_RILY_ALLOC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>USE_RILY_ALLOC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>USE_RILY_ALLOC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

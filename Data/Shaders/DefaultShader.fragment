@@ -1,0 +1,13 @@
+#version 330 core
+
+in vec3 out_normal;
+out vec4 color_output;
+uniform vec4 u_color;
+
+void main()
+{
+	vec3 ambientColor = vec3(u_color) * 0.4f;
+	float diffStrength = dot(vec3(0,1,1), out_normal);
+	vec3 diffColor = diffStrength * vec3(u_color);
+	color_output = vec4(diffColor,u_color.w);
+}

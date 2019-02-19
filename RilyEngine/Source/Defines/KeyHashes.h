@@ -1,0 +1,67 @@
+#pragma once
+#include <string>
+
+unsigned __int64 constexpr hash(const char* c)
+{
+	unsigned __int64 hash = 5381;
+	unsigned __int64 ret = 0;
+
+	while (ret = *c++)
+		hash = ((hash << 5) + hash) + ret;
+
+	return hash;
+}
+
+#define HASH_LEFT_SHIFT 		hash("left shift")
+#define HASH_RIGHT_SHIFT		hash("right shift")
+#define HASH_LEFT_CTRL			hash("left ctrl")
+#define HASH_RIGHT_CTRL			hash("right ctrl")
+#define HASH_LEFT_ALT			hash("left alt")
+#define HASH_RIGHT_ALT			hash("right alt")
+#define HASH_CAPS_LOCK			hash("capslock")
+#define HASH_TAB				hash("tab")
+#define HASH_RETURN				hash("return")
+#define HASH_UP_ARROW			hash("up")
+#define HASH_DOWN_ARROW			hash("down")
+#define HASH_LEFT_ARROW			hash("left")
+#define HASH_RIGHT_ARROW		hash("right")
+#define HASH_EQUAL				hash("=")
+#define HASH_BACKSPACE			hash("backspace")
+#define HASH_ESC				hash("escape")
+#define HASH_SPACE				hash("space")
+#define HASH_PAGE_UP			hash("pageup")
+#define HASH_PAGE_DOWN			hash("pagedown")
+#define HASH_END				hash("End")
+#define HASH_HOME				hash("home")
+#define HASH_INSERT				hash("insert")
+#define HASH_DELETE				hash("delete")
+#define HASH_NUMPAD_0			hash("keypad 0")
+#define HASH_NUMPAD_1			hash("keypad 1")
+#define HASH_NUMPAD_2			hash("keypad 2")
+#define HASH_NUMPAD_3			hash("keypad 3")
+#define HASH_NUMPAD_4			hash("keypad 4")
+#define HASH_NUMPAD_5			hash("keypad 5")
+#define HASH_NUMPAD_6			hash("keypad 6")
+#define HASH_NUMPAD_7			hash("keypad 7")
+#define HASH_NUMPAD_8			hash("keypad 8")
+#define HASH_NUMPAD_9			hash("keypad 9")
+#define HAHS_KEYPAD_MULTIPLY	hash("keypad *")
+#define HASH_KEYPAD_ADD			hash("keypad +")
+#define HASH_KEYPAD_MINUS		hash("keypad -")
+#define HASH_KEYPAD_DIVIDE		hash("keypad /")
+#define HASH_KEYPAD_ENTER		hash("keypad enter")
+#define HASH_KEYPAD_DOT			hash("keypad .")
+#define HASH_F1					hash("f1")
+#define HASH_F2					hash("f2")
+#define HASH_F3					hash("f3")
+#define HASH_F4					hash("f4")
+#define HASH_F5					hash("f5")
+#define HASH_F6					hash("f6")
+#define HASH_F7					hash("f7")
+#define HASH_F8					hash("f8")
+#define HASH_F9					hash("f9")
+#define HASH_F10				hash("f10")
+#define HASH_F11				hash("f11")
+#define HASH_F12				hash("f12")
+#define HASH_NUM_LOCK			hash("numlock")
+#define WINDOWS_LEFT			hash("left windows")
