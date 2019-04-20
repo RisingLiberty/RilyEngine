@@ -32,9 +32,11 @@
 *.app
 
 *.vs
-*Debug
+*Debug/
 *Release
 *x86
 *x64
 References
 
+#include engine debug code
+!RilyEngine/Source/Debug/
