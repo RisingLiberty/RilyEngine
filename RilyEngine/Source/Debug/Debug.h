@@ -35,6 +35,24 @@ namespace Debug
 		LogRecursive(type, false, msg, args...);
 	}
 
+	template<typename... Args>
+	void LogInfo(const Args&... args)
+	{
+		Log(LogType::INFO, args...);
+	}
+
+	template<typename... Args>
+	void LogWarning(const Args&... args)
+	{
+		Log(LogType::WARNING, args...);
+	}
+
+	template<typename... Args>
+	void LogError(const Args&... args)
+	{
+		Log(LogType::ERROR, args...);
+	}
+
 	template<typename T, typename... Args>
 	void LogRecursive(LogType type, bool isForced, std::ostringstream& msg,
 		T value, const Args&... args)
