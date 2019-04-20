@@ -2,7 +2,7 @@
 
 namespace Resources
 {
-
+	const char* NewLine = "\n";
 
 enum class ResourceType
 {
